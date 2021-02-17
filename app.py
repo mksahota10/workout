@@ -1,17 +1,22 @@
-from flask import Flask
-PORT = 8080
-DEBUG = True
+from workout import create_app
 
-app = Flask(__name__)
+app = create_app()
 
-@app.route('/')
-def hello_world():
-    return 'Hello world!!'
+if __name__ == "__main__":
+    app.run()
 
 
 
 
 
 
-if __name__ == '__main__':
-    app.run(debug=DEBUG, port=PORT)
+
+
+
+
+
+
+
+
+
+
